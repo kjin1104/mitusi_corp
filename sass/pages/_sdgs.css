@@ -1,0 +1,48 @@
+.breadcrumb__item {
+  text-transform: none;
+}
+
+.heading-h3 span {
+  position: relative;
+  padding: .0rem 1em;
+  background-color: #f7f7f7;
+  text-align: center;
+  text-transform: none;
+}
+
+.sdgs__logo {
+  max-width: 800px;
+  margin: 30px auto 50px;
+  text-align: center;
+}
+
+.sdgs__area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 25px;
+}
+
+.sdgs__area p {
+  font-size: clamp(10px, 1.6vw, 14px);
+  min-height: 0vw;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sdgs__area img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+@supports not (aspect-ratio: 3/2) {
+  .sdgs__area img {
+    height: 180px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sdgs__area {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,60 @@
+:root {
+  --v-space: clamp(90px, 9vw, 120px);
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Noto Sans","Noto Sans JP","Noto Sans CJK JP Subset","Yu Gothic Medium","游ゴシック Medium","Yu Gothic","游ゴシック","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo";
+  font-weight: normal;
+  line-height: 1.75;
+  color: $color-text;
+  background-color: $color-body;
+  overflow-x: hidden;
+
+  @include font-size(15);
+
+  @include mq(md) {
+    @include font-size(14);
+    overflow-x: hidden;
+  }
+}
+
+a {
+  transition: .3s;
+  text-decoration: none;
+  color: $color-primary;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+::selection {
+  color: #fff;
+  background-color: $color-primary;
+}
+
+.video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  margin-bottom: 50px;
+  padding-bottom: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

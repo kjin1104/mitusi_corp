@@ -1,0 +1,60 @@
+.workarea {
+  padding: 80px 0 70px;
+  text-align: center;
+
+  &__heading {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.navi {
+  padding: var(--v-space) 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 25px;
+  }
+
+  @media (min-width: 768px) {
+    &__container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &-btn {
+    border-radius: 5px;
+    background: rgb(218, 230, 242);
+    background: linear-gradient(0deg, rgba(218, 230, 242, 1) 27%, rgba(215, 234, 247, 1) 100%);
+    padding: 35px;
+  }
+
+  @media (max-width: 767px) {
+    &-btn {
+      padding: 20px;
+    }
+  }
+
+
+  &-btn a {
+    display: block;
+  }
+
+  &-btn img {
+    aspect-ratio: 3 / 2;
+    //object-fit: cover;
+    width: 100%;
+  }
+
+  &-btn:hover {
+    opacity: .75;
+  }
+
+}
+
+@supports not (aspect-ratio: 3 / 2) {
+  .navi-btn img {
+    height: 180px;
+  }
+}

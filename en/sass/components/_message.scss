@@ -1,0 +1,22 @@
+.message {
+  margin-bottom: 30px;
+  text-align: left;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
+  background-size: cover, cover;
+
+  &__heading {
+    font-weight: bold;
+    line-height: .8;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    @include font-size(40);
+
+    @include mq(md) {
+      line-height: 1.5;
+
+      @include font-size(32);
+    }
+  }
+}

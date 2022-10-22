@@ -1,0 +1,224 @@
+.recruit {
+  &__sublist {
+    margin-top: 20px;
+
+    & span {
+      font-weight: 600;
+    }
+  }
+
+  & dt {
+    margin: 20px 0 0 0;
+  }
+
+  & .header-img {
+    clip-path: polygon(100% 0, 100% 88%, 0 94%, 0 0);
+  }
+}
+
+.tabs {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #f7f7f7;
+  box-shadow: 0 3px 5px rgba(29, 131, 210, 0.2);
+  border-radius: 10px;
+  margin: 0 auto
+}
+
+.tab__item {
+  width: calc(100%/2);
+  height: 50px;
+  border-bottom: 2px solid #d9ebf3;
+  background-color: #f7f7f7;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #3174bf;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border-radius: 10px 10px 0px 0px
+}
+
+@media screen and (max-width: 450px) {
+  .tab__item {
+    font-size: 11px
+  }
+
+  .tab__item:hover {
+    opacity: 0.75
+  }
+}
+
+input[name="tab__item"] {
+  display: none
+}
+
+.tab__content {
+  display: none;
+  margin-top: 30px;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden
+}
+
+@media screen and (max-width: 450px) {
+  .tab__content {
+    padding: 20px 20px 0
+  }
+}
+
+#all:checked~#all_content,
+#programming:checked~#programming_content,
+#design:checked~#design_content {
+  display: block
+}
+
+.tabs input:checked+.tab__item {
+  background-color: #3174bf;
+  color: #fff
+}
+
+.career-list__list {
+  list-style: none;
+  padding: 0
+}
+
+.career-list__item {
+  display: flex;
+  border-top: solid 1px #f0f0f0;
+  margin: 15px;
+  padding: 15px 0 0
+}
+
+@media screen and (max-width: 450px) {
+  .career-list__item {
+    display: block
+  }
+}
+
+.career-list__item ul {
+  list-style: none
+}
+
+@media screen and (max-width: 768px) {
+  .career-list__item ul {
+    display: block
+  }
+}
+
+.career-list__item ul:not(:last-child) {
+  margin-bottom: 15px
+}
+
+@media screen and (max-width: 768px) {
+  .career-list__item ul:not(:last-child) {
+    margin-bottom: 30px
+  }
+}
+
+.career-list__heading {
+  display: flex;
+  flex: 0 0 31%
+}
+
+@media screen and (max-width: 768px) {
+  .career-list__heading {
+    margin-bottom: 3px
+  }
+}
+
+.career-list__body {
+  flex: 1
+}
+
+.career-list__date {
+  margin-right: 30px;
+  color: #404e63;
+  font-weight: 600
+}
+
+@media screen and (max-width: 450px) {
+  .career-list__date {
+    font-size: 16px;
+    font-size: 1rem;
+    color: #30b1fd;
+    margin-bottom: 10px
+  }
+}
+
+.career-list__label {
+  margin-right: 20px
+}
+
+.career-list__detail {
+  text-align: right;
+  position: relative;
+  padding: 0 30px 0 0
+}
+
+.career-list__detail::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 60%;
+  right: 0;
+  width: 20px;
+  height: 1px;
+  background-color: #000
+}
+
+.career-list__detail::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(90% - 10px);
+  right: 0;
+  transform: rotate(-160deg);
+  width: 10px;
+  height: 1px;
+  background-color: #000
+}
+
+.checkbox__btn {
+  text-align: center;
+  margin-top: 30px
+}
+
+.checkbox__btn label {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center
+}
+
+.is-inactive {
+  pointer-events: none;
+  position: relative;
+  line-height: 1.4;
+  display: inline-block;
+  width: 200px;
+  padding: 15px 0;
+  transition: .3s;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #ccc 0%, #ccc 51%, #ccc 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-size: 0.875rem
+}
+
+.btn {
+  width: 30vw;
+
+  @include mq(xs) {
+    width: 75vw;
+  }
+}

@@ -1,0 +1,52 @@
+.header {
+  //position: fixed;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+  transition: all .3s;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 30px 30px;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", "Yu Gothic", "游ゴシック";
+  position: relative;
+
+  @include mq(md) {
+    padding: 10px 15px;
+  }
+
+  &.active {
+    position: fixed;
+    padding: 30px 30px;
+    background-color: rgba(255, 255, 255, 0.75);
+
+    @include mq(md) {
+      padding: 10px 15px;
+    }
+  }
+
+  &__logo {
+    @include mq(md) {
+      width: 80%;
+    }
+  }
+}
+
+.lang {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 0.3rem 0.3rem 0;
+
+  & ul {
+    display: flex;
+    text-align: right;
+    list-style: none;
+    font-size: 0.7rem;
+  }
+
+  & .slash {
+    padding: 0 .5em;
+  }
+}

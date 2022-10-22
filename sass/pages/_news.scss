@@ -1,0 +1,28 @@
+.news__body {
+  display: flex;
+
+  @include mq(md) {
+    flex-direction: column;
+  }
+
+  & .news-list-detail {
+    flex: 0 0 80.09009%;
+    padding: 0 20px 0 0;
+
+    @include mq(xs) {
+      padding: 0;
+    }
+  }
+}
+
+.news-list__right {
+  & h4 {
+    @include font-size(18);
+  }
+
+  & ul {
+    list-style: none;
+    margin: 10px;
+    @include font-size(16);
+  }
+}
