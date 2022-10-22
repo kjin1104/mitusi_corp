@@ -1,0 +1,139 @@
+.sub-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  color: #fff;
+  background-image: url(../../img/message/message_hero.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  font-family: 'Montserrat',
+    sans-serif;
+
+  @include mq(md) {
+    height: 180px;
+  }
+
+  &__inner {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.greeting {
+  padding: 50px 0 70px;
+
+  @include mq(md) {
+    padding: 60px 0 60px;
+    background-position: center -20px;
+    background-size: 375px;
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__message {
+    margin-bottom: 100px;
+    text-align: center;
+
+    @include mq(md) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.messagearea {
+  display: flex;
+
+  & h2 {
+    margin-bottom: 20px;
+    color: $color-mark;
+  }
+
+  @include mq(md) {
+    display: block;
+  }
+
+  &__img-wrapper {
+    flex: 0 0 45%;
+    margin-right: 50px;
+
+    @include mq(md) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    box-shadow: 70px 40px 0 #e1f4ff;
+    border-radius: 10px;
+  }
+
+  &__body {
+    flex: 1;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include font-size(24);
+
+    @include mq(md) {
+      line-height: 1.2;
+      margin-bottom: 15px;
+      text-align: center;
+
+      @include font-size(18);
+    }
+  }
+}
+
+.greeting__even .messagearea {
+  flex-direction: row-reverse;
+
+  &__img-wrapper {
+    flex: 0 0 45%;
+    margin: 0 0 0 50px;
+
+    @include mq(md) {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.company-info {
+  &__heading {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__table {
+    margin-bottom: 60px;
+  }
+}
+
+.access {
+  &__map {
+    margin-bottom: 5px;
+
+    iframe {
+      height: 400px;
+      vertical-align: bottom;
+
+      @include mq(md) {
+        height: 240px;
+      }
+    }
+  }
+
+  &__map-link {
+    @include font-size(14);
+  }
+}

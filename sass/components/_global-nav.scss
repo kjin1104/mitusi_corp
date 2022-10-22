@@ -1,0 +1,282 @@
+.global-nav {
+  font-family: "Noto Sans","Noto Sans JP","Noto Sans CJK JP Subset","Yu Gothic Medium","游ゴシック Medium","Yu Gothic","游ゴシック","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo";
+  @include mq(md) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    flex-direction: column-reverse;
+
+    &.show {
+      visibility: visible;
+      opacity: .95;
+      background-color: $color-primary-dark;
+      color: #fff;
+    }
+  }
+
+  &__list {
+    display: flex;
+    padding-left: 30px;
+    list-style: none;
+
+    @include mq(md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px;
+    }
+  }
+
+  &__item {
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+    @include font-size(15);
+
+    @include mq(lg) {
+      @include font-size(12);
+    }
+
+    @include mq(md) {
+      margin-bottom: 20px;
+
+      @include font-size(16);
+    }
+
+    &:not(:last-child) {
+      margin-right: 25px;
+
+      @include mq(md) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    color: $color-text;
+
+    &::after {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      display: block;
+      width: 0;
+      height: 1px;
+      content: "";
+      transition: width .3s;
+
+      @include mq(md) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    @include mq(md) {
+      color: #fff;
+    }
+  }
+}
+
+.btn-menu {
+  display: none;
+
+  @include mq(md) {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    opacity: .9;
+    border: none;
+    outline: none;
+    background: none;
+
+    appearance: none;
+    @include font-size(12);
+  }
+
+  &__line {
+    position: relative;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    transition: all .4s;
+    border-radius: 4px;
+    background-color: #000;
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "";
+      transition: inherit;
+      border-radius: 4px;
+      background-color: inherit;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      top: 8px;
+    }
+  }
+
+  &.active {
+    .btn-menu__line {
+      background-color: transparent;
+      transition-delay: .22s;
+      transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+
+      &::before,
+      &::after {
+        top: 0;
+        background-color: #fff;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+/***********************************************/
+.gloval-nav-logo__img {
+  width: 100%;
+  margin: 0 0 3rem 0;
+}
+
+.h-accordion {
+  margin: 0 0 .5rem;
+  width: 150px;
+}
+
+.h-toggle {
+  display: none;
+}
+
+.h-option {
+  position: relative;
+}
+
+.h-title,
+.h-content {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.3s;
+}
+
+.h-title {
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  padding: 1em 0;
+  display: block;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.h-title::after,
+.h-title::before {
+  content: "";
+  position: absolute;
+  right: 1.25em;
+  top: 1.5em;
+  width: 2px;
+  height: 0.75em;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.h-title::after {
+  transform: rotate(90deg);
+}
+
+.h-content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.h-content p {
+  margin: 0;
+  padding: 0.5em 1em 1em;
+  line-height: 1.5;
+}
+
+.toggle:checked+.h-title+.content {
+  max-height: 500px;
+  transition: all 1.5s;
+}
+
+.toggle:checked+.h-title::before {
+  transform: rotate(90deg) !important;
+}
+
+.header-nav__list-sub {
+  list-style: none;
+  line-height: 3.5;
+}
+
+.header-nav__link {
+  line-height: 1;
+  padding: 5px 0;
+  color: #fff;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -9999;
+  min-width: 100%;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  mix-blend-mode: overlay;
+  opacity: 0.1;
+}
+
+video {
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  mix-blend-mode: overlay;
+}

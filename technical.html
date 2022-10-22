@@ -1,0 +1,522 @@
+<!-- <?php require './info/wp-blog-header.php'; ?> -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!DOCTYPE html>
+    <html lang="ja">
+
+    <head>
+        <!-- <?php
+    $filename = 'index.php';
+    if (file_exists($filename)) {
+        include('elements/hd.php');
+    } else {
+        echo 'データを読み込みに失敗しました';
+    }
+    ?> -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta property='og:type' content='website'>
+        <meta property='og:title' content='MCC'>
+        <meta property='og:url' content='https://www.mccnet.co.jp/'>
+        <meta name="keywords" content="三井共同建設コンサルタント,建設コンサルタント,建設,コンサルタント" />
+        <meta name="description"
+            content="三井共同建設コンサルタント株式会社｜三井共同建設コンサルタント株式会社では河川・ダムや道路、橋梁・道路構造物、都市・地方計画、公園緑地・景観計画、リゾート計画、上下水道、港湾・空港、環境・防災、施工計画及び施工設備、建築、情報システムなどの各建設部門の調査、企画、立案、設計、施工管理を行っております。" />
+        <meta name="theme-color" content="#005fb1">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="canonical" href="https://www.mccnet.co.jp/" />
+        <link rel='shortlink' href='https://www.mccnet.co.jp/' />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Noto+Sans+JP&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+            rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type='text/javascript' src="js/script.js"></script>
+        <script type='text/javascript' src="js/mh.js"></script>
+        <script type='text/javascript' src="assets/js/lazyload.js"></script>
+        <script type='text/javascript' src="assets/js/inv.js"></script>
+
+
+        <link rel="stylesheet" href="assets/css/set.min.css" media="all" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/css/aos.css" media="all" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="assets/img/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+        <!-- <?php
+    $filename = 'index.php';
+    if (file_exists($filename)) {
+        include('elements/hd.php');
+    } else {
+        echo 'データを読み込みに失敗しました';
+    }
+    ?> -->
+    </head>
+
+<body class="page-message">
+    <!-- <div class="wrapper">
+        <?php
+        $filename = 'index.php';
+        if (file_exists($filename)) {
+            include('elements/gnav.php');
+        } else {
+            echo 'データを読み込みに失敗しました';
+        }
+        ?> -->
+
+    <div class="header">
+        <div class="header__logo">
+            <h1 class="logo">
+                <a href="." class="logo__link"><img class="logo__img" src="assets/img/logo.svg" alt="三井共同建設コンサルタント"></a>
+            </h1>
+        </div>
+        <nav class="global-nav">
+            <div class="lang">
+                <ul>
+                    <li>JP</li>
+                    <span class="slash">/</span>
+                    <li><a href="/en/">EN</a></li>
+                </ul>
+            </div>
+            <div class="video-container lozad spview">
+                <video class="lazy" src="assets/img/gloval-nav-bg.mp4" autoplay playsinline muted loop></video>
+            </div>
+
+            <ul class="global-nav__list">
+                <li class="global-nav__item gloval-nav-logo__img spview"><a href="index.php">
+                        <img src="assets/img/gloval-nav-logo.svg" alt="三井共同建設コンサルタント"></a></li>
+                <li class="global-nav__item"><a class="global-nav__link" href="projects">事業案内</a></li>
+                <li class="global-nav__item"><a class="global-nav__link" href="work.php">技術情報</a></li>
+                <li class="global-nav__item"><a class="global-nav__link" href="company">企業情報</a></li>
+                <li class="global-nav__item"><a class="global-nav__link"
+                        href="https://www.mccnet.co.jp/recruit/">採用情報</a></li>
+                <li class="global-nav__item"><a class="global-nav__link" href="workenvironment.php">お問合せ</a>
+                </li>
+            </ul>
+        </nav>
+        <button type="button" class="btn-menu">
+            <span class="btn-menu__line"></span>
+        </button>
+    </div>
+
+    <div class="sub-hero">
+        <div class="sub-hero__inner">
+            <h2 class="heading-primary heading-primary--white">TECHNIQUE</h2>
+        </div>
+    </div>
+
+    <div class="breadcrumb">
+        <div class="l-inner">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb__list">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"
+                    class="breadcrumb__item">
+                    <a itemprop="item" href="." class="breadcrumb__link">
+                        <span itemprop="name">HOME</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"
+                    class="breadcrumb__item">
+                    <a itemprop="item" href="technical" class="breadcrumb__link">
+                        <span itemprop="name">技術情報</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"
+                    class="breadcrumb__item">
+                    <span itemprop="item" href="technology">
+                        <span itemprop="name">MCC研究所</span>
+                    </span>
+                    <meta itemprop="position" content="3" />
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="contents" id="contents">
+        <section class="technical l-section">
+            <h3 class="heading-h3"><span>MCC研究所</span></h3>
+            <div class="l-inner">
+                <p>三井共同建設コンサルタントでは、MCC研究所を立上げ豊かな未来を創造するために、様々な技術研究を行っています。<br>MCC研究所ではテーマ別に研究グループを組織して優れた新技術の開発に取組とともに、MCCテクノロジーレポートを発行して技術情報の提供を行っています。<br>現在、取組んでいる研究テーマを以下に示します。
+                </p>
+                <div class="technicals__list" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in">
+                    <div class="card-wrapper card-wrapper--col2 mt-5">
+                        <div class="card">
+                            <h4>融雪出水予測モデルの高度化研究グループ</h4>
+                            <p>分布型モデル高度化利用研究グループで開発済の融雪洪水予測可能モデルでは、限られた小流域に対応したモデルです。このことから、大流域にも通用でき高精度な融雪モデルの開発を行っています。
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h4>マルチモデル・アンサンブル研究グループ</h4>
+                            <p>現在の降雨予測は、初期値のわずかなバラツキが影響し、時空間的な降雨予測精度に課題があります。また、水文モデルについても様々な現象を完全に再現できるモデルがないのが現状です。そこで、本研究グループでは、領域気象モデルによるアンサンブル予測とRRIモデル等の水文モデルをカップリングし、不確実性を考慮した洪水予測手法の開発を行っています。
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h4>気候変動研究グループ</h4>
+                            <p>気候変動を考慮した河川計画策定を可能にするため、大規模アンサンブル気候データを活用した数千年単位の河川流量及び浸水リスク推計を行う方法を開拓するための研究を行っています。</p>
+                        </div>
+
+                        <div class="card">
+                            <h4>HPCを用いた演算処理高速化研究グループ</h4>
+                            <p>気候変動が地域の環境・経済社会に与える影響を、気候予測データセットを用いて評価する手法を研究開発しています。さらに、影響評価を踏まえた緩和策/適応策を検討することにより、地域（まちづくり）における課題を環境面から解決する方法を研究しています。(数値波動水路プログラム)やETC2.0等のビッグデータの解析、ディープラーニング等の高速演算処理への適用を目指します。
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h4>まちづくり・環境保全業務開発研究グループ</h4>
+                            <p>分布型モデル高度化利用研究グループで開発済の融雪洪水予測可能モデルでは、限られた小流域に対応したモデルです。このことから、大流域にも通用でき高精度な融雪モデルの開発を行っています。
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h4>性能照査型道路計画設計に関する調査研究グループ</h4>
+                            <p>(一社)交通工学研究会の「道路の交通容量とサービスの質に関する研究（以降、委員会）」において提唱されている「性能照査型道路計画設計」については、研究の熟度も高まり、国土交通省の事務所発注業務においても、関連する業務が散見されるようになってきました。そこで、産学連携のもと、道路計画・設計分野の新たな計画設計手法である「性能照査型道路計画設計」および関連する事項について調査、研究を行っています。
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h4>BIM/CIMの港湾関係業務への活用拡大の可能性研究グループ</h4>
+                            <p>本研究グループでは、ICT技術であるドローンやBIM/CIM技術について、港湾設計及び港湾計画分野への活用方策を様々な視点から研究を行っています。また、活用方策の一つとして、近年事例の多い既存改良設計に関するICT技術を活かした効率的なツール開発についても研究しています。
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h4>流木災害防止・被害軽減技術研究グループ</h4>
+                            <p>近年、豪雨等に伴う流木による多大な被害を受け、全国的に流木対策強化の推進や、更なる効果的な流木対策に関する技術知見が求められています。そこで、本研究グループでは水路実験や数値解析等により、流木対策に関する技術開発を目指しています。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="research l-section">
+            <div class="l-inner">
+                <h4 class="research__heading">
+                    <strong data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in"
+                        class="aos-init aos-animate">
+                        研究内容・研究成果
+                    </strong>
+                </h4>
+                <div class="research__container">
+                    <ul class="card-wrapper card-wrapper--col3 mt-5 research__list">
+                        <li class="card"><a href="img/technology/technology_lab_report1.pdf" target="_blank" rel="noopener noreferrer">氾濫モデル用空間データ研究 <span class="material-icons-outlined">picture_as_pdf</span></a></li>
+                        <li class="card"><a href="img/technology/technology_lab_report2.pdf" target="_blank" rel="noopener noreferrer">水域流動モデル高度化研究 <span class="material-icons-outlined">picture_as_pdf</span></a></li>
+                        <li class="card"><a href="img/technology/technology_lab_report3.pdf" target="_blank" rel="noopener noreferrer">市民合意形成の仕事 <span class="material-icons-outlined">picture_as_pdf</span></a></li>
+                        <li class="card"><a href="img/technology/technology_lab_report4.pdf" target="_blank" rel="noopener noreferrer">FLIP高度化研究 <span class="material-icons-outlined">picture_as_pdf</span></a></li>
+                        <li class="card"><a href="img/technology/technology_lab_report5.pdf" target="_blank" rel="noopener noreferrer">ダム湖の三次元モデル共同開発 <span class="material-icons-outlined">picture_as_pdf</span></a></li>
+                        <li class="card"><a href="img/technology/technology_lab_report6.pdf" target="_blank" rel="noopener noreferrer">CIM活用方法の研究 <span class="material-icons-outlined">picture_as_pdf</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="web-service l-section">
+            <div class="l-inner">
+                <h4 class="web-service__heading">
+                    <strong data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in"
+                        class="aos-init aos-animate">
+                        自社開発WEBサービス
+                    </strong>
+                </h4>
+
+                <div class="web-service__container">
+                    <div class="service__clm">
+                        <h5>【あめみずマップ】</h5>
+                        <p>あめみずマップは、クラウド技術とWeb地図サービス技術を利用して、だれもが使いやすく、分かりやすいレーダ雨量情報を提供するWebサービスです。<br>
+                            アマゾンウエブサービスジャパン社が提供するクラウドサービスAWSを利用して運用しています。Google Maps
+                            APIを採用して地図と連動（地図の移動、拡大、縮小が可能）した正確な位置情報と共にレーダ雨量情報を提供しています。</p>
+                        <div class="service__link">
+                            <a href="https://rain.mcclabo.jp/" target="_blank" rel="noopener noreferrer"
+                                class="btn mt-3">あめみずMAP</a>
+                        </div>
+                    </div>
+
+                    <div class="service__clm">
+                        <h5>【fieldcheker】</h5>
+                        <p>FieldCheckerは、農業、工業、防災分野など幅広い分野に対応できるIoT基盤です。
+                            センサーから収集した情報を外部サービスに提供したり、外部サービスからクラウド間連携により情報を収集することが可能です。グラフ表示やアラート通知、解析機能などが標準。水位観測、水質観測、温度管理、浸水検知等様々な用途にご利用いただけます。
+                        </p>
+                        <div class="service__link">
+                            <a href="https://support-fc.amebaownd.com/" target="_blank" rel="noopener noreferrer"
+                                class="btn mt-3">fieldcheker</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service technical-list l-section" data-aos="fade-zoom-in" data-aos-offset="100"
+            data-aos-easing="ease-in">
+            <div class="l-inner l-inner--xl">
+                <div class="technical-list">
+                    <div class="technical-list__heading">
+                        <h3 class="heading-secondary">技術情報</h3>
+                    </div>
+                    <div class="technical-list__body">
+                        <div class="technical-list__text">
+                            <ul class="technical-list__btn">
+                                <li><a href="technical_presentedpaper">発表論文</a></li>
+                                <li><a href="technology_report">テクノロジーレポート</a></li>
+                                <li><a href="technology_commendation">表彰業務 </a></li>
+                                <li><a href="technology_disaster">災害対応</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+
+    <div class="entry">
+        <div class="l-inner-xl">
+            <div class="entry__area">
+                <div class="entry__text-area">
+                    <h3 class="entry__entry-ttl">RECRUIT</h3>
+                    <small>採用情報</small>
+                    <p>キミの熱意が、未来を創る</p>
+                    <div class="entry__link">
+                        <a href="/recruit/" target="_blank" rel="noopener noreferrer"
+                            class="btn mt-3">ENTRY</a>
+                    </div>
+                </div>
+                <div class="entry__img-box">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <?php
+    $filename = 'message.php';
+    if (file_exists($filename)) {
+        include('elements/fd.php');
+    } else {
+        echo 'データを読み込みに失敗しました';
+    }
+    ?> -->
+
+    <footer class="footer l-section">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a class="footer-nav__link" href=".">新着情報</a></li>
+                        <li class="footer-nav__item pcview"><a class="footer-nav__link" href="projects">事業案内</a>
+                            <ul class="footer-nav__list-sub">
+                                <li><a class="footer-nav__link" href="projects_rivers-sabo">河川・砂防</a></li>
+                                <li><a class="footer-nav__link" href="projects_roads-bridges">道路・橋梁</a></li>
+                                <li><a class="footer-nav__link" href="projects_ports-airport-coasts">港湾・空港・海岸</a>
+                                </li>
+                                <li><a class="footer-nav__link" href="projects_town-planning">まちづくり</a></li>
+                                <li><a class="footer-nav__link" href="projects_sewer">下水道</a></li>
+                                <li><a class="footer-nav__link" href="projects_ground-analysis">地盤解析</a></li>
+                                <li><a class="footer-nav__link"
+                                        href="projects_environment-renewableenergy">環境・再生エネルギー</a></li>
+                                <li><a class="footer-nav__link" href="projects_telecommunications">電気通信</a></li>
+                                <li><a class="footer-nav__link" href="projects_informationsystem">情報システム</a></li>
+                                <li><a class="footer-nav__link" href="projects_maintenance">保全</a></li>
+                                <li><a class="footer-nav__link" href="projects_cm-ppppfl">マネジメント</a></li>
+                                <li><a class="footer-nav__link" href="projects_overseas">海外</a></li>
+                            </ul>
+                        </li>
+
+                        <div class="accordion spview">
+                            <div class="option">
+                                <input type="checkbox" id="toggle1" class="toggle">
+                                <label class="title" for="toggle1">事業案内</label>
+                                <div class="content">
+                                    <ul class="footer-nav__list-sub">
+                                        <li><a class="footer-nav__link" href="projects">事業案内リスト</a></li>
+                                        <li><a class="footer-nav__link" href="projects_rivers-sabo">河川・砂防</a></li>
+                                        <li><a class="footer-nav__link" href="projects_roads-bridges">道路・橋梁</a>
+                                        </li>
+                                        <li><a class="footer-nav__link"
+                                                href="projects_ports-airport-coasts">港湾・空港・海岸</a></li>
+                                        <li><a class="footer-nav__link" href="projects_town-planning">まちづくり</a>
+                                        </li>
+                                        <li><a class="footer-nav__link" href="projects_sewer">下水道</a></li>
+                                        <li><a class="footer-nav__link" href="projects_ground-analysis">地盤解析</a>
+                                        </li>
+                                        <li><a class="footer-nav__link"
+                                                href="projects_environment-renewableenergy">環境・再生エネルギー</a></li>
+                                        <li><a class="footer-nav__link" href="projects_telecommunications">電気通信</a>
+                                        </li>
+                                        <li><a class="footer-nav__link"
+                                                href="projects_informationsystem">情報システム</a></li>
+                                        <li><a class="footer-nav__link" href="projects_maintenance">保全</a></li>
+                                        <li><a class="footer-nav__link" href="projects_cm-ppppfl">マネジメント</a></li>
+                                        <li><a class="footer-nav__link" href="projects_overseas">海外</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li class="footer-nav__item pcview"><a class="footer-nav__link" href="company">企業情報</a>
+                            <ul class="footer-nav__list-sub">
+                                <li><a class="footer-nav__link" href="company_message">トップメッセージ</a></li>
+                                <li><a class="footer-nav__link" href="company_message#vision">MCC VISION100</a>
+                                </li>
+                                <li><a class="footer-nav__link" href="company_outline">会社概要</a></li>
+                                <li><a class="footer-nav__link" href="company_outline#history">会社沿革</a></li>
+                                <li><a class="footer-nav__link" href="company_qualification">有資格者</a></li>
+                                <li><a class="footer-nav__link"
+                                        href="company_qualification#organization-chart">組織図</a></li>
+                                <li><a class="footer-nav__link" href="company_access">事業所・営業所</a></li>
+                                <li><a class="footer-nav__link"
+                                        href="company_quality-environment-isms">品質方針・環境・ISMS 品質</a></li>
+                                <!-- <li><a class="footer-nav__link" href="/mcc/info/?cat=6">SDG’s への取組み 品質</a></li> -->
+                            </ul>
+                        </li>
+
+                        <div class="accordion spview">
+                            <div class="option">
+                                <input type="checkbox" id="toggle2" class="toggle">
+                                <label class="title" for="toggle2">企業情報</label>
+                                <div class="content">
+                                    <ul class="footer-nav__list-sub">
+                                        <li><a class="footer-nav__link" href="company">企業情報リスト</a></li>
+                                        <li><a class="footer-nav__link" href="company_message">トップメッセージ</a></li>
+                                        <li><a class="footer-nav__link" href="company_message#vision">MCC
+                                                VISION100</a></li>
+                                        <li><a class="footer-nav__link" href="company_outline">会社概要</a></li>
+                                        <li><a class="footer-nav__link" href="company_outline#history">会社沿革</a>
+                                        </li>
+                                        <li><a class="footer-nav__link" href="company_qualification">有資格者</a></li>
+                                        <li><a class="footer-nav__link"
+                                                href="company_qualification#organization-chart">組織図</a></li>
+                                        <li><a class="footer-nav__link" href="company_access">事業所・営業所</a></li>
+                                        <li><a class="footer-nav__link"
+                                                href="company_quality-environment-isms">品質方針・環境・ISMS 品質</a></li>
+                                        <!-- <li><a class="footer-nav__link" href="/mcc/info/?cat=6">SDG’s への取組み 品質</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li class="footer-nav__item pcview"><a class="footer-nav__link" href="technical">技術情報</a>
+                            <ul class="footer-nav__list-sub">
+                                <li><a class="footer-nav__link" href="technical">MCC 研究所・研究内容・研究成果</a>
+                                <li><a class="footer-nav__link" href="technical_presentedpaper">発表論文</a></li>
+                                <li><a class="footer-nav__link" href="technology_report">テクノロジーレポート</a></li>
+                                <li><a class="footer-nav__link" href="technology_commendation">表彰業務</a></li>
+                                <li><a class="footer-nav__link" href="technology_disaster">災害対応</a></li>
+                            </ul>
+                        </li>
+
+                        <div class="accordion spview">
+                            <div class="option">
+                                <input type="checkbox" id="toggle3" class="toggle">
+                                <label class="title" for="toggle3">技術情報</label>
+                                <div class="content">
+                                    <ul class="footer-nav__list-sub">
+                                        <li><a class="footer-nav__link" href="technical">MCC 研究所・研究内容・研究成果</a>
+                                        <li><a class="footer-nav__link" href="technical_presentedpaper">発表論文</a>
+                                        </li>
+                                        <li><a class="footer-nav__link" href="technology_report">テクノロジーレポート</a>
+                                        </li>
+                                        <li><a class="footer-nav__link" href="technology_commendation">表彰業務</a>
+                                        </li>
+                                        <li><a class="footer-nav__link" href="technology_disaster">災害対応</a></li>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="/recruit/">採用情報</a>
+                            <ul class="footer-nav__list-sub">
+                                <li><a class="footer-nav__link" href="/info/contact">お問合せ</a>
+                                <li><a class="footer-nav__link" href="technical_presentedpaper">個人情報保護方針</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="spview mt-3"><img src="assets/img/footer_logo.png" alt="MSA"></p>
+            </div>
+
+            <div class="footer__right">
+                <h4>三井共同建設コンサルタント株式会社</h4>
+                <p>〒141-0032 東京都品川区大崎一丁目11番1号<br>(ゲートシティ大崎ウエストタワー15 階)</p>
+                <p>TEL：03-3495-1321 FAX：03-3495-1330</p>
+                <div class="footer__btn">
+                    <a href="https://www.mccnet.co.jp/recruit/" class="btn-10 btn-accent">求人サイトへ</a>
+                </div>
+                <p class="badge pcview"><img src="assets/img/footer_logo.png" alt="MSA"></p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            &copy;Copyright Mitsui Consultants., All Rights Reserved.
+        </div>
+    </footer>
+
+    <div class="page-top">
+        <a href="#" class="page-top__link"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+    </div>
+    </div>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            delay: 100,
+            duration: 500,
+            easing: 'false',
+            once: false,
+            mirror: true,
+        });
+
+        $(function () {
+            $('.lazy').lazyload({
+                threshold: -1000,
+                skip_invisible: true
+            });
+        });
+
+
+        $('.heading-h5__acd').on('click', function () {
+            $('.box').slideUp(500);
+
+            var findElm = $(this).next(".box");
+
+            if ($(this).hasClass('close')) {
+                $(this).removeClass('close');
+            } else {
+                $('.close').removeClass('close');
+                $(this).addClass('close');
+                $(findElm).slideDown(500);
+            }
+        });
+
+        $(window).on('load', function () {
+            $('.accordion-area li:first-of-type section').addClass("open");
+            $(".open").each(function (index, element) {
+                var Title = $(element).children('.heading-h5__acd');
+                $(Title).addClass('close');
+                var Box = $(element).children('.box');
+                $(Box).slideDown(500);
+            });
+        });
+    </script>
+</body>
+
+</php>

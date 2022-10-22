@@ -1,0 +1,39 @@
+.u-left {
+  text-align: left !important;
+}
+
+.u-center {
+  text-align: center !important;
+}
+
+.u-right {
+  text-align: right !important;
+}
+
+.u-text-bold {
+  font-weight: bold !important;
+}
+
+.u-text-big {
+  font-size: 1.5em;
+}
+
+.u-sp-only {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
+@include mq(md) {
+  .page__link {
+    text-align: center;
+  }
+}
+
+@include mq(xs) {
+  .img-small {
+    width: 60%;
+  }
+}

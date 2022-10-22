@@ -1,0 +1,29 @@
+.company .heading-h3 span {
+  position: relative;
+  padding: 0rem 1em;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.vision h4 {
+  text-align: center;
+  font-size: clamp(30px, 5.2vw, 40px);
+}
+.vision__definition {
+  display: flex;
+}
+.vision__mds {
+  flex: 0 0 30.09009%;
+  margin-right: 50px;
+}
+.vision__body {
+  flex: 1;
+}
+.vision h5 {
+  font-size: clamp(28px, 4.2vw, 24px);
+}
+.vision h6 {
+  font-size: clamp(14px, 3.2vw, 16px);
+}
+
+/*****************Vision******************/

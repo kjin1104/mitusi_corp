@@ -1,0 +1,46 @@
+.workarea {
+  padding: 80px 0 70px;
+  text-align: center;
+}
+.workarea__heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.navi {
+  padding: var(--v-space) 0;
+}
+.navi__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 25px;
+}
+@media (min-width: 768px) {
+  .navi__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.navi-btn {
+  border-radius: 5px;
+  background: #dae6f2;
+  background: linear-gradient(0deg, #dae6f2 27%, #d7eaf7 100%);
+  padding: 35px;
+}
+@media (max-width: 767px) {
+  .navi-btn {
+    padding: 20px;
+  }
+}
+.navi-btn a {
+  display: block;
+}
+.navi-btn img {
+  aspect-ratio: 3/2;
+  width: 100%;
+}
+
+@supports not (aspect-ratio: 3/2) {
+  .navi-btn img {
+    height: 180px;
+  }
+}
