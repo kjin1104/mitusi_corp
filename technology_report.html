@@ -1,0 +1,825 @@
+<!-- <?php require './info/wp-blog-header.php'; ?> -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!DOCTYPE html>
+    <html lang="ja">
+
+    <head>
+        <!-- <?php
+    $filename = 'index.php';
+    if (file_exists($filename)) {
+        include('elements/hd.php');
+    } else {
+        echo 'データを読み込みに失敗しました';
+    }
+    ?> -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta property='og:type' content='website'>
+        <meta property='og:title' content='MCC'>
+        <meta property='og:url' content='https://www.mccnet.co.jp/'>
+        <meta name="keywords" content="三井共同建設コンサルタント,建設コンサルタント,建設,コンサルタント" />
+        <meta name="description"
+            content="三井共同建設コンサルタント株式会社｜三井共同建設コンサルタント株式会社では河川・ダムや道路、橋梁・道路構造物、都市・地方計画、公園緑地・景観計画、リゾート計画、上下水道、港湾・空港、環境・防災、施工計画及び施工設備、建築、情報システムなどの各建設部門の調査、企画、立案、設計、施工管理を行っております。" />
+        <meta name="theme-color" content="#005fb1">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="canonical" href="https://www.mccnet.co.jp/" />
+        <link rel='shortlink' href='https://www.mccnet.co.jp/' />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Noto+Sans+JP&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+            rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type='text/javascript' src="js/script.js"></script>
+        <script type='text/javascript' src="js/mh.js"></script>
+        <script type='text/javascript' src="assets/js/lazyload.js"></script>
+        <script type='text/javascript' src="assets/js/inv.js"></script>
+
+
+        <link rel="stylesheet" href="assets/css/set.min.css" media="all" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/css/aos.css" media="all" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="assets/img/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+        <!-- <?php
+    $filename = 'index.php';
+    if (file_exists($filename)) {
+        include('elements/hd.php');
+    } else {
+        echo 'データを読み込みに失敗しました';
+    }
+    ?> -->
+    </head>
+
+<body class="page-message">
+    <!-- <div class="wrapper">
+        <?php
+        $filename = 'index.php';
+        if (file_exists($filename)) {
+            include('elements/gnav.php');
+        } else {
+            echo 'データを読み込みに失敗しました';
+        }
+        ?> -->
+
+    <div class="header">
+        <div class="header__logo">
+            <h1 class="logo">
+                <a href="." class="logo__link"><img class="logo__img" src="assets/img/logo.svg" alt="三井共同建設コンサルタント"></a>
+            </h1>
+        </div>
+        <nav class="global-nav">
+            <div class="lang">
+                <ul>
+                    <li>JP</li>
+                    <span class="slash">/</span>
+                    <li><a href="/en/">EN</a></li>
+                </ul>
+            </div>
+            <div class="video-container lozad spview">
+                <video class="lazy" src="assets/img/gloval-nav-bg.mp4" autoplay playsinline muted loop></video>
+            </div>
+
+                <ul class="global-nav__list">
+                    <li class="global-nav__item gloval-nav-logo__img spview"><a href="index">
+                    <img src="assets/img/gloval-nav-logo.svg" alt="三井共同建設コンサルタント"></a></li>
+                    <li class="global-nav__item"><a class="global-nav__link" href="projects">事業案内</a></li>
+                    <li class="global-nav__item"><a class="global-nav__link" href="technical">技術情報</a></li>
+                    <li class="global-nav__item"><a class="global-nav__link" href="company">企業情報</a></li>
+                    <li class="global-nav__item"><a class="global-nav__link" href="https://www.mccnet.co.jp/recruit/">採用情報</a></li>
+                    <li class="global-nav__item"><a class="global-nav__link" href="workenvironment">お問合せ</a>
+                    </li>
+                </ul>
+        </nav>
+        <button type="button" class="btn-menu">
+            <span class="btn-menu__line"></span>
+        </button>
+    </div>
+
+    <div class="sub-hero">
+        <div class="sub-hero__inner">
+            <h2 class="heading-primary heading-primary--white">TECHNIQUE</h2>
+        </div>
+    </div>
+
+    <div class="breadcrumb">
+        <div class="l-inner">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb__list">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"
+                    class="breadcrumb__item">
+                    <a itemprop="item" href="." class="breadcrumb__link">
+                        <span itemprop="name">HOME</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"
+                    class="breadcrumb__item">
+                    <a itemprop="item" href="technical" class="breadcrumb__link">
+                        <span itemprop="name">技術情報</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"
+                    class="breadcrumb__item">
+                    <span itemprop="item" href="technology_report">
+                        <span itemprop="name">テクノロジーレポート</span>
+                    </span>
+                    <meta itemprop="position" content="3" />
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="contents" id="contents">
+        <section class="technical l-section">
+            <h3 class="heading-h3"><span>テクノロジー<br class="u-sp-only ">レポート</span></h3>
+            <div class="l-inner">
+                <div class="technicals__list" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in">
+                    <small>※掲載しているファイルは解像度を落としております。<br>※冊子をご要望の場合はお近くの営業所までご連絡下さい。</small>
+                    <div class="technical__text">
+                        <ul class="accordion-area">
+                            <li>
+                                <section>
+                                    <h5 class="heading-h5__acd">2022年度(令和4年度)</h5>
+                                    <div class="box">
+                                        <p>現在、記事はございません</p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section>
+                                    <h5 class="heading-h5__acd">2021年度(令和3年度)</h5>
+                                    <div class="box">
+                                        <table class="technical__tbl">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="technical__rep-header">発行号</th>
+                                                    <th class="technical__rep-header">レポートタイトル</th>
+                                                    <th class="technical__rep-header">ダウンロード</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="technical__rep-num">春季号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>01：整備の実現性を考慮した都市計画道路の見直しについての取組み</li>
+                                                            <li>02：樋管詳細設計におけるBIM/CIM活用</li>
+                                                            <li>03：景観形成モデル事業における橋梁部・アプローチ部構造の最適化</li>
+                                                            <li>04：堤防の浸透対策における他分野技術を活用した事例</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined"><a href="img/technology/technology_report1.pdf">save_alt</a></span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">夏季号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>05：都心部での大規模開発計画に関する円滑な事業実施に向けた取組み</li>
+                                                            <li>06：RRIを用いた洪水ハザードマップの作成/CIM活用</li>
+                                                            <li>07：国内自動車工場の生産能力変化やモーダルシフトによる自動車部品の海上物流への影響分析</li>
+                                                            <li>08：土砂・洪水氾濫対策における遊砂地の施設計画に関する技術</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined"><a href="img/technology/technology_report2.pdf">save_alt</a></span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">特集号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>優良業務表彰プロジェクト紹介</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined"><a href="img/technology/technology_report3.pdf">save_alt</a></span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">10月号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>09：厳しい制約を受ける橋梁設計の創意工夫とDXの効果的活用</li>
+                                                            <li>10：中小河川における洪水予測モデル検討（集中型と分布型の比較事例）</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                       <span class="material-icons-outlined"><a href="img/technology/technology_report4.pdf">save_alt</a></span><br>
+                                                       <span class="material-icons-outlined"><a href="img/technology/technology_report5.pdf">save_alt</a></span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">11月号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>11：家屋近接箇所での堤防強化工法について</li>
+                                                            <li>12：数値波動解析を用いた浜崖後退抑止工（サンドパック）の効果検証</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                       <span class="material-icons-outlined"><a href="img/technology/technology_report6.pdf">save_alt</a></span><br>
+                                                       <span class="material-icons-outlined"><a href="img/technology/technology_report7.pdf">save_alt</a></span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">12月号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>13：高速道路の長寿命化計画における成果品の品質向上への取り組み</li>
+                                                            <li>14：地方小規模自治体におけるスマートシティ実行計画の立案</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                       <span class="material-icons-outlined"><a href="img/technology/technology_report8.pdf">save_alt</a></span><br>
+                                                       <span class="material-icons-outlined"><a href="img/technology/technology_report9.pdf">save_alt</a></span>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">1月号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>15：既存ストックを活用した大規模自転車道の計画（SDGs持続可能なまちづくりの取組）</li>
+                                                            <li>16：HPCを用いた演算処理高速化研究</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                       <span class="material-icons-outlined"><a href="img/technology/technology_report10.pdf">save_alt</a></span><br>
+                                                       <span class="material-icons-outlined"><a href="img/technology/technology_report11.pdf">save_alt</a></span>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">2月号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>17：流域治水から完全治水に向けた治水計画の検討事例</li>
+                                                            <li>18：河道掘削における環境配慮事例と新たな展開に向けたとりまとめ</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                       <span class="material-icons-outlined"><a href="img/technology/technology_report12.pdf">save_alt</a></span><br>
+                                                       <span class="material-icons-outlined"><a href="img/technology/technology_report13.pdf">save_alt</a></span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">3月号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>19：計画的な河床低下対策の立案事例</li>
+                                                            <li>20：現地状況を考慮した既存岸壁改良工法の提案</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                       <span class="material-icons-outlined"><a href="img/technology/technology_report14.pdf">save_alt</a></span><br>
+                                                       <span class="material-icons-outlined"><a href="img/technology/technology_report15.pdf">save_alt</a></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section>
+                                    <h5 class="heading-h5__acd">2020年度(令和2年度)</h5>
+                                    <div class="box">
+                                        <table class="technical__tbl">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="technical__rep-header">発行号</th>
+                                                    <th class="technical__rep-header">レポートタイトル</th>
+                                                    <th class="technical__rep-header">ダウンロード</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="technical__rep-num">春季号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>01：河川堤防の盤ぶくれ対策として用いる川表遮水工法の浸透挙動に関する考察</li>
+                                                            <li>02：軟弱地盤上で鉄道と交差する橋梁計画の最適化</li>
+                                                            <li>03：道路土工構造物点検における精度向上と効率化に関する提案</li>
+                                                            <li>04：シミュレーションモデルを用いた風環境改善対策の検討</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">夏季号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>05：都市部における橋梁の最適化とBIM/CIM の効果的な活用</li>
+                                                            <li>06：中山間地域における地域主体の自立的活性化の支援</li>
+                                                            <li>07：橋脚における伝統的な流木対策技術</li>
+                                                            <li>08：低塑性細粒土の液状化挙動研究について</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">秋季号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>09：洪水予測モデルの全国的普及に向けた検討</li>
+                                                            <li>10：歴史的な鉄筋コンクリートアーチ橋における維持管理の合理化</li>
+                                                            <li>11：河道内に設置する揚水機場のポンプ形式について</li>
+                                                            <li>12：FWD による空港の舗装調査について</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">冬季号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>13：下水道管渠更生工法の選定による新技術(自立管製管工法)の採用検討</li>
+                                                            <li>14：河口閉塞と海岸侵食が併起する発生メカニズムの解明</li>
+                                                            <li>15：舗装点検の合理化と修繕工事への提案</li>
+                                                            <li>16：道路情報提供システムの刷新における検討事例</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">特集号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>優良業務表彰プロジェクト紹介</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">12月号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>13：高速道路の長寿命化計画における成果品の品質向上への取り組み</li>
+                                                            <li>14：地方小規模自治体におけるスマートシティ実行計画の立案</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">1月号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>15：既存ストックを活用した大規模自転車道の計画（SDGs持続可能なまちづくりの取組）</li>
+                                                            <li>16：HPCを用いた演算処理高速化研究</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">2月号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>17：流域治水から完全治水に向けた治水計画の検討事例</li>
+                                                            <li>18：河道掘削における環境配慮事例と新たな展開に向けたとりまとめ</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section>
+                                    <h5 class="heading-h5__acd">2019年度(令和元年度)</h5>
+                                    <div class="box">
+                                        <table class="technical__tbl">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="technical__rep-header">発行号</th>
+                                                    <th class="technical__rep-header">レポートタイトル</th>
+                                                    <th class="technical__rep-header">ダウンロード</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="technical__rep-num">春季号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>01：水循環再生に向けた取り組みに対する普及・啓発策の検討事例</li>
+                                                            <li>02：大規模河川を渡河する橋梁計画の最適化</li>
+                                                            <li>03：「道の駅」整備における管理運営手法の検討</li>
+                                                            <li>04：液状化現象に伴う既設マンホール浮上防止対策について</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">夏季号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>05：温度応力解析を活用したコンクリート構造物の温度ひび割れ対策</li>
+                                                            <li>06：伏越ボックスの耐震性能照査</li>
+                                                            <li>07：ＲＲＩモデルによる全国版洪水・氾濫予測システムの構築</li>
+                                                            <li>08：アンサンブル予測による洪水予測精度向上へ向けた検討</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">秋季号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>09：大規模出水が頻発する河川における多自然川づくり</li>
+                                                            <li>10：高速道路の改築における4車線化計画について</li>
+                                                            <li>11：「水害ハザードマップ作成の手引き」への対応事例</li>
+                                                            <li>12：港湾における交流機能の強化を核とした埠頭再編計画の考え方</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">冬季号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>13：革新的河川技術プロジェクトにおける簡易型河川監視カメラ技術開発について</li>
+                                                            <li>14：既設樋管の無動力化更新設計について</li>
+                                                            <li>15：国道事務所管内橋梁の損傷傾向分析と予防保全計画</li>
+                                                            <li>16：供用中の下水処理場における耐震補強設計について</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">特集号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>優良業務表彰プロジェクト紹介</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">12月号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>13：高速道路の長寿命化計画における成果品の品質向上への取り組み</li>
+                                                            <li>14：地方小規模自治体におけるスマートシティ実行計画の立案</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">1月号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>15：既存ストックを活用した大規模自転車道の計画（SDGs持続可能なまちづくりの取組）</li>
+                                                            <li>16：HPCを用いた演算処理高速化研究</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="technical__rep-num">2月号</td>
+                                                    <td class="technical__rep-num">
+                                                        <ol>
+                                                            <li>17：流域治水から完全治水に向けた治水計画の検討事例</li>
+                                                            <li>18：河道掘削における環境配慮事例と新たな展開に向けたとりまとめ</li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="technical__rep-num">
+                                                        <span class="material-icons-outlined">save_alt</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="service technical-list l-section" data-aos="fade-zoom-in" data-aos-offset="100"
+            data-aos-easing="ease-in">
+            <div class="l-inner l-inner--xl">
+                <div class="technical-list">
+                    <div class="technical-list__heading">
+                        <h3 class="heading-secondary">技術情報</h3>
+                    </div>
+                    <div class="technical-list__body">
+                        <div class="technical-list__text">
+                            <ul class="technical-list__btn">
+                                <li><a href="technical_presentedpaper">発表論文</a></li>
+                                <li><a href="technology_report">テクノロジーレポート</a></li>
+                                <li><a href="technology_commendation">表彰業務 </a></li>
+                                <li><a href="technology_disaster">災害対応</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+
+    <div class="entry">
+        <div class="l-inner-xl">
+            <div class="entry__area">
+                <div class="entry__text-area">
+                    <h3 class="entry__entry-ttl">RECRUIT</h3>
+                    <small>採用情報</small>
+                    <p>キミの熱意が、未来を創る</p>
+                    <div class="entry__link">
+                        <a href="/recruit/" target="_blank" rel="noopener noreferrer"
+                            class="btn mt-3">ENTRY</a>
+                    </div>
+                </div>
+                <div class="entry__img-box">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <?php
+    $filename = 'message.php';
+    if (file_exists($filename)) {
+        include('elements/fd.php');
+    } else {
+        echo 'データを読み込みに失敗しました';
+    }
+    ?> -->
+
+    <footer class="footer l-section">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a class="footer-nav__link" href=".">新着情報</a></li>
+                        <li class="footer-nav__item pcview"><a class="footer-nav__link" href="projects">事業案内</a>
+                            <ul class="footer-nav__list-sub">
+                                <li><a class="footer-nav__link" href="projects_rivers-sabo">河川・砂防</a></li>
+                                <li><a class="footer-nav__link" href="projects_roads-bridges">道路・橋梁</a></li>
+                                <li><a class="footer-nav__link" href="projects_ports-airport-coasts">港湾・空港・海岸</a>
+                                </li>
+                                <li><a class="footer-nav__link" href="projects_town-planning">まちづくり</a></li>
+                                <li><a class="footer-nav__link" href="projects_sewer">下水道</a></li>
+                                <li><a class="footer-nav__link" href="projects_ground-analysis">地盤解析</a></li>
+                                <li><a class="footer-nav__link"
+                                        href="projects_environment-renewableenergy">環境・再生エネルギー</a></li>
+                                <li><a class="footer-nav__link" href="projects_telecommunications">電気通信</a></li>
+                                <li><a class="footer-nav__link" href="projects_informationsystem">情報システム</a></li>
+                                <li><a class="footer-nav__link" href="projects_maintenance">保全</a></li>
+                                <li><a class="footer-nav__link" href="projects_cm-ppppfl">マネジメント</a></li>
+                                <li><a class="footer-nav__link" href="projects_overseas">海外</a></li>
+                            </ul>
+                        </li>
+
+                        <div class="accordion spview">
+                            <div class="option">
+                                <input type="checkbox" id="toggle1" class="toggle">
+                                <label class="title" for="toggle1">事業案内</label>
+                                <div class="content">
+                                    <ul class="footer-nav__list-sub">
+                                        <li><a class="footer-nav__link" href="projects">事業案内リスト</a></li>
+                                        <li><a class="footer-nav__link" href="projects_rivers-sabo">河川・砂防</a></li>
+                                        <li><a class="footer-nav__link" href="projects_roads-bridges">道路・橋梁</a>
+                                        </li>
+                                        <li><a class="footer-nav__link"
+                                                href="projects_ports-airport-coasts">港湾・空港・海岸</a></li>
+                                        <li><a class="footer-nav__link" href="projects_town-planning">まちづくり</a>
+                                        </li>
+                                        <li><a class="footer-nav__link" href="projects_sewer">下水道</a></li>
+                                        <li><a class="footer-nav__link" href="projects_ground-analysis">地盤解析</a>
+                                        </li>
+                                        <li><a class="footer-nav__link"
+                                                href="projects_environment-renewableenergy">環境・再生エネルギー</a></li>
+                                        <li><a class="footer-nav__link" href="projects_telecommunications">電気通信</a>
+                                        </li>
+                                        <li><a class="footer-nav__link"
+                                                href="projects_informationsystem">情報システム</a></li>
+                                        <li><a class="footer-nav__link" href="projects_maintenance">保全</a></li>
+                                        <li><a class="footer-nav__link" href="projects_cm-ppppfl">マネジメント</a></li>
+                                        <li><a class="footer-nav__link" href="projects_overseas">海外</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li class="footer-nav__item pcview"><a class="footer-nav__link" href="company">企業情報</a>
+                            <ul class="footer-nav__list-sub">
+                                <li><a class="footer-nav__link" href="company_message">トップメッセージ</a></li>
+                                <li><a class="footer-nav__link" href="company_message#vision">MCC VISION100</a>
+                                </li>
+                                <li><a class="footer-nav__link" href="company_outline">会社概要</a></li>
+                                <li><a class="footer-nav__link" href="company_outline#history">会社沿革</a></li>
+                                <li><a class="footer-nav__link" href="company_qualification">有資格者</a></li>
+                                <li><a class="footer-nav__link"
+                                        href="company_qualification#organization-chart">組織図</a></li>
+                                <li><a class="footer-nav__link" href="company_access">事業所・営業所</a></li>
+                                <li><a class="footer-nav__link"
+                                        href="company_quality-environment-isms">品質方針・環境・ISMS 品質</a></li>
+                                <!-- <li><a class="footer-nav__link" href="/mcc/info/?cat=6">SDG’s への取組み 品質</a></li> -->
+                            </ul>
+                        </li>
+
+                        <div class="accordion spview">
+                            <div class="option">
+                                <input type="checkbox" id="toggle2" class="toggle">
+                                <label class="title" for="toggle2">企業情報</label>
+                                <div class="content">
+                                    <ul class="footer-nav__list-sub">
+                                        <li><a class="footer-nav__link" href="company">企業情報リスト</a></li>
+                                        <li><a class="footer-nav__link" href="company_message">トップメッセージ</a></li>
+                                        <li><a class="footer-nav__link" href="company_message#vision">MCC
+                                                VISION100</a></li>
+                                        <li><a class="footer-nav__link" href="company_outline">会社概要</a></li>
+                                        <li><a class="footer-nav__link" href="company_outline#history">会社沿革</a>
+                                        </li>
+                                        <li><a class="footer-nav__link" href="company_qualification">有資格者</a></li>
+                                        <li><a class="footer-nav__link"
+                                                href="company_qualification#organization-chart">組織図</a></li>
+                                        <li><a class="footer-nav__link" href="company_access">事業所・営業所</a></li>
+                                        <li><a class="footer-nav__link"
+                                                href="company_quality-environment-isms">品質方針・環境・ISMS 品質</a></li>
+                                        <!-- <li><a class="footer-nav__link" href="/mcc/info/?cat=6">SDG’s への取組み 品質</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li class="footer-nav__item pcview"><a class="footer-nav__link" href="technical">技術情報</a>
+                            <ul class="footer-nav__list-sub">
+                                <li><a class="footer-nav__link" href="technical">MCC 研究所・研究内容・研究成果</a>
+                                <li><a class="footer-nav__link" href="technical_presentedpaper">発表論文</a></li>
+                                <li><a class="footer-nav__link" href="technology_report">テクノロジーレポート</a></li>
+                                <li><a class="footer-nav__link" href="technology_commendation">表彰業務</a></li>
+                                <li><a class="footer-nav__link" href="technology_disaster">災害対応</a></li>
+                            </ul>
+                        </li>
+
+                        <div class="accordion spview">
+                            <div class="option">
+                                <input type="checkbox" id="toggle3" class="toggle">
+                                <label class="title" for="toggle3">技術情報</label>
+                                <div class="content">
+                                    <ul class="footer-nav__list-sub">
+                                        <li><a class="footer-nav__link" href="technical">MCC 研究所・研究内容・研究成果</a>
+                                        <li><a class="footer-nav__link" href="technical_presentedpaper">発表論文</a>
+                                        </li>
+                                        <li><a class="footer-nav__link" href="technology_report">テクノロジーレポート</a>
+                                        </li>
+                                        <li><a class="footer-nav__link" href="technology_commendation">表彰業務</a>
+                                        </li>
+                                        <li><a class="footer-nav__link" href="technology_disaster">災害対応</a></li>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="/recruit/">採用情報</a>
+                            <ul class="footer-nav__list-sub">
+                                <li><a class="footer-nav__link" href="/info/contact">お問合せ</a>
+                                <li><a class="footer-nav__link" href="technical_presentedpaper">個人情報保護方針</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="spview mt-3"><img src="assets/img/footer_logo.png" alt="MSA"></p>
+            </div>
+
+            <div class="footer__right">
+                <h4>三井共同建設コンサルタント株式会社</h4>
+                <p>〒141-0032 東京都品川区大崎一丁目11番1号<br>(ゲートシティ大崎ウエストタワー15 階)</p>
+                <p>TEL：03-3495-1321 FAX：03-3495-1330</p>
+                <div class="footer__btn">
+                    <a href="https://www.mccnet.co.jp/recruit/" class="btn-10 btn-accent">求人サイトへ</a>
+                </div>
+                <p class="badge pcview"><img src="assets/img/footer_logo.png" alt="MSA"></p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            &copy;Copyright Mitsui Consultants., All Rights Reserved.
+        </div>
+    </footer>
+
+    <div class="page-top">
+        <a href="#" class="page-top__link"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+    </div>
+    </div>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            delay: 100,
+            duration: 500,
+            easing: 'false',
+            once: false,
+            mirror: true,
+        });
+
+        $(function () {
+            $('.lazy').lazyload({
+                threshold: -1000,
+                skip_invisible: true
+            });
+        });
+
+
+        $('.heading-h5__acd').on('click', function () {
+            $('.box').slideUp(500);
+
+            var findElm = $(this).next(".box");
+
+            if ($(this).hasClass('close')) {
+                $(this).removeClass('close');
+            } else {
+                $('.close').removeClass('close');
+                $(this).addClass('close');
+                $(findElm).slideDown(500);
+            }
+        });
+
+        $(window).on('load', function () {
+            $('.accordion-area li:first-of-type section').addClass("open");
+            $(".open").each(function (index, element) {
+                var Title = $(element).children('.heading-h5__acd');
+                $(Title).addClass('close');
+                var Box = $(element).children('.box');
+                $(Box).slideDown(500);
+            });
+        });
+    </script>
+</body>
+
+</php>
