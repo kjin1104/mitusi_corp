@@ -1,0 +1,54 @@
+.project {
+  &__sublist {
+    @include font-size(14);
+    list-style: none;
+    margin-top: 30px;
+  }
+}
+
+/*****************Technical******************/
+.research {
+  & h4 {
+    text-align: center;
+    font-size: clamp(30px, 5.2vw, 40px);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    list-style: none;
+  }
+
+  @include mq(md) {
+    .card {
+      margin-right: 10px;
+    }
+  }
+}
+
+.material-icons-outlined {
+  @include font-size(18);
+}
+
+
+.project {
+  &__list .card-wrapper h4 {
+    @include font-size(18);
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 24px;
+    width: 100%;
+    border-bottom: 5px solid #c7c7c7;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 70px;
+      height: 5px;
+      background-color: #ECB500;
+    }
+  }
+}

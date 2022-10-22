@@ -1,0 +1,7 @@
+.news__body {
+  display: flex;
+  flex-direction: column;
+}
+.news__body .news-list {
+  flex: 0 0 80.09009%;
+}
